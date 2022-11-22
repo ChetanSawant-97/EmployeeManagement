@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>EmployeeManagement</display-name>
+
+	<servlet>
+		<servlet-name>home</servlet-name>
+		<servlet-class>com.em.controller.HomeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>register</servlet-name>
+		<servlet-class>com.em.controller.RegisterEmpController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>empRecord</servlet-name>
+		<servlet-class>com.em.controller.EmpRecordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>empRecord</servlet-name>
+		<url-pattern>/record</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>employee</servlet-name>
+		<servlet-class>com.em.controller.UpdateAndDeleteController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>employee</servlet-name>
+		<url-pattern>/employee</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>com.em.controller.UpdateSkillsController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>empskills</servlet-name>
+		<servlet-class>com.em.controller.EmpSkillsController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>empskills</servlet-name>
+		<url-pattern>/empskills</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
